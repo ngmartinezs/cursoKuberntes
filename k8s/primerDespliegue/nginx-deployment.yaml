@@ -12,6 +12,11 @@ spec:
       labels:
         app: nginx-demo
     spec:
+      tolerations:
+      - key: "key"
+        operator: "Equal"
+        value: "value"
+        effect: "NoSchedule"
       containers:
       - name: nginx
         image: nginx:latest
