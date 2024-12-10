@@ -15,7 +15,7 @@ spec:
       tolerations:
       - key: "node-role.kubernetes.io/control-plane"
         operator: "Equal"
-        value: "false"
+        value: "true"
         effect: "NoSchedule"
       containers:
       - name: nginx
