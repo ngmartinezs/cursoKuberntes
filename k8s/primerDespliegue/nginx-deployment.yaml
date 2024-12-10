@@ -13,9 +13,9 @@ spec:
         app: nginx-demo
     spec:
       tolerations:
-      - key: "key"
+      - key: "node-role.kubernetes.io/control-plane"
         operator: "Equal"
-        value: "value"
+        value: "true"
         effect: "NoSchedule"
       containers:
       - name: nginx
